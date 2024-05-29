@@ -4,7 +4,7 @@
    font-family: sans-serif;
 }
 :root{
-    --colorpink:rgba(206,0,51,255);
+    --colorpink:rgba(206,0,51,255); 
     --whitepink:rgba(222,94,125,255);
     --pinkwhite:rgba(239,188,200,255);
 }
@@ -16,6 +16,8 @@ input::placeholder{
 }
 body{
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 #head{
     width: 100%;
@@ -68,6 +70,7 @@ body{
 }
 #head nav a i{
     font-size: 23px;
+    
 }
 
 #head .fr{
@@ -85,7 +88,7 @@ body{
 
 #head .fr i{
     font-size: 8px;
-    filter: var(--colorpink);
+    color: var(--colorpink);
 
 }
 #head .fr button{
@@ -285,6 +288,7 @@ body{
 }
 #pliers .gauche{
     margin-left: 50px;
+    width: 50%;
 }
 #pliers .gauche h3{
     font-size: 30px;
@@ -331,8 +335,10 @@ body{
 }
 
  #pliers .droite{
+    position: relative;
     margin-top: 75px;
-     margin-left: 80px;
+    left: 80px;
+    
     /*margin-right: 0; */
     
 } 
@@ -586,7 +592,10 @@ body{
     color: var(--colorpink);
     text-align: center;
 }
-
+input::placeholder{
+    position: relative;
+    margin-left: 30px;
+}
 #recrutement .recru{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
